@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.17)
 project(greenhouse-sim)
 
+find_package(PNG REQUIRED)
+
 set(BUILD_SHARED_LIBS FALSE CACHE BOOL "Setting SFML to build static libraries" FORCE)
 set(SFML_USE_STATIC_STD_LIBS TRUE CACHE BOOL "Use static versions of the C++ std libs" FORCE)
 add_subdirectory(libs/SFML)
